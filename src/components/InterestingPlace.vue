@@ -15,7 +15,6 @@ export default {
     props: ['interestingPlace'],
     created() {
         axios_requests.get_description_by_id(this.interestingPlace.properties.xid).then(result => {
-            console.log(result.data)
             this.desc = result.data.wikipedia_extracts.text
         })
     },

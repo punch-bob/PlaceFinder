@@ -56,7 +56,6 @@ export default {
             this.showIneterestingPlaces = true
             this.showWeather = true
             axios_requests.get_weather_by_coords(this.place.point.lat, this.place.point.lng).then(result => {
-                console.log(result.data);
                 this.weather = result.data.weather[0]
                 this.temp = result.data.main
             })
