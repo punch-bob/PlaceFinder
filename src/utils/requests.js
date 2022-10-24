@@ -3,7 +3,7 @@ import axios from "axios"
 const GEOCODING_API_URL = 'https://graphhopper.com/api/1/geocode' 
 const GEO_API_KEY = 'b1425526-a75a-43bc-a72d-24540134e8bf'
 
-const WEATHER_API_URL = 'https://api.openweathermap.org/data/2.5/weather'
+const WEATHER_API_URL = 'http://api.openweathermap.org/data/2.5/weather'
 const WEATHER_API_KEY = 'cf76756b64a539656a3092df01dd590f'
 
 const OPEN_TRIP_MAP_API_URL = 'http://api.opentripmap.com/0.1/ru/places/'

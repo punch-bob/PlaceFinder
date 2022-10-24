@@ -7,7 +7,7 @@
             <span>📍 {{ place.point.lat }}, {{ place.point.lng }}</span><p></p>
             <div v-if="showWeather">
                 <span>☁️ {{ weather.main }} ({{ weather.description }})</span><br>
-                <span>🌡️ Current:{{ temp.temp }}K, feels like: {{ temp.feels_like }}</span>
+                <span>🌡️ Current: {{ Math.round(temp.temp - 273.15)}}C, feels like: {{ Math.round(temp.feels_like - 273.15) }}C</span>
             </div><p></p>
             <InterestingPlaceList v-if="showIneterestingPlaces" v-bind:interestingPlaceList="interestingPlaceList"/>
         </div>
